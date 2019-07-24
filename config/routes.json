@@ -1,0 +1,30 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pay",
+      "handler": "Paypal.index",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "GET",
+      "path": "/completed",
+      "handler": "Paypal.completed",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "GET",
+      "path": "/cancel",
+      "handler": "Paypal.cancelled",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
